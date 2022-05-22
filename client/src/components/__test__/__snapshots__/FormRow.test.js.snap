@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Case {  FormRow Snap 1 } 1`] = `
+<div
+  className="form-row"
+>
+  <label
+    className="form-label"
+    htmlFor="name"
+  >
+    testlabel
+  </label>
+  <input
+    className="form-input"
+    name="name"
+    onChange="No change"
+    type="text"
+    value="test"
+  />
+</div>
+`;
+
+exports[`Test Case {  FormRow Snap 2 } 1`] = `
+<div
+  className="form-row"
+>
+  <label
+    className="form-label"
+  />
+  <input
+    className="form-input"
+  />
+</div>
+`;
+
+exports[`Test Case {  FormRow Snap 3 } 1`] = `
+<div
+  className="form-row"
+>
+  <label
+    className="form-label"
+    htmlFor="snap3"
+  >
+    Password
+  </label>
+  <input
+    className="form-input"
+    name="snap3"
+    onChange="Change"
+    type="password"
+    value="SNAP"
+  />
+</div>
+`;

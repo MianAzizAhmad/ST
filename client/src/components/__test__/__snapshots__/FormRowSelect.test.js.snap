@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Case {  FormRowSelect Snap 1 } 1`] = `
+<div
+  className="form-row"
+>
+  <label
+    className="form-label"
+    htmlFor="name 1"
+  >
+    Label1
+  </label>
+  <select
+    className="form-select"
+    name="name 1"
+    onChange="No change"
+    value="test 1"
+  >
+    <option
+      value="Value1"
+    >
+      Value1
+    </option>
+    <option
+      value="Value2"
+    >
+      Value2
+    </option>
+    <option
+      value="Value3"
+    >
+      Value3
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Test Case {  FormRowSelect Snap 2 } 1`] = `
+<div
+  className="form-row"
+>
+  <label
+    className="form-label"
+  />
+  <select
+    className="form-select"
+  />
+</div>
+`;
+
+exports[`Test Case {  FormRowSelect Snap 3 } 1`] = `
+<div
+  className="form-row"
+>
+  <label
+    className="form-label"
+    htmlFor="snap3"
+  >
+    Password
+  </label>
+  <select
+    className="form-select"
+    name="snap3"
+    onChange="Change"
+    value="SNAP 3"
+  >
+    <option
+      value=""
+    />
+    <option
+      value="Value2"
+    >
+      Value2
+    </option>
+    <option
+      value="Value3"
+    >
+      Value3
+    </option>
+  </select>
+</div>
+`;
