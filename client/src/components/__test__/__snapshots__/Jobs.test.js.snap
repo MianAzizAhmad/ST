@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jobs Test Case {   Snap 1 } 1`] = `
+<article
+  className="sc-bczRLJ hMCfpN"
+>
+  <header>
+    <div
+      className="main-icon"
+    >
+      Confiz
+    </div>
+    <div
+      className="info"
+    >
+      <h5>
+        Fresh
+      </h5>
+      <p>
+        Confiz
+      </p>
+    </div>
+  </header>
+  <div
+    className="content"
+  >
+    <div
+      className="content-center"
+    >
+      <span
+        className="icon"
+      >
+        Invalid date
+      </span>
+      <span
+        className="text"
+        id="type"
+      >
+        Associate Developer
+      </span>
+      <div
+        className="status Offered"
+      >
+        Offered
+      </div>
+    </div>
+    <footer>
+      <div
+        className="actions"
+      >
+        <button
+          className="btn edit-btn"
+          id="edit"
+          onClick={[Function]}
+          type="button"
+        >
+          Edit
+        </button>
+      </div>
+    </footer>
+  </div>
+</article>
+`;

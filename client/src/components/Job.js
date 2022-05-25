@@ -1,7 +1,7 @@
+import React, {useState} from 'react';
 import moment from 'moment'
 import { Link } from 'react-router-dom'
 import Wrapper from '../assets/wrappers/Job'
-import react, {useState} from "react";
 
 const Job = ({
   _id,
