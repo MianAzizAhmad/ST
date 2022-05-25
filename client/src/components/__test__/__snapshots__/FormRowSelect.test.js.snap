@@ -66,7 +66,9 @@ exports[`Test Case {  FormRowSelect Snap 3 } 1`] = `
   >
     <option
       value=""
-    />
+    >
+      
+    </option>
     <option
       value="Value2"
     >
