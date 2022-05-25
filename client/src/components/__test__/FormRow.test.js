@@ -8,7 +8,7 @@ import renderer from 'react-test-renderer';
 describe('Test Case { ', ()=>{
 
     it('FormRow Snap 1 }', ()=>{
-        const tree = renderer.create(<FormRow type="text" name="name" value="test" handleChange="No change" labelText="testlabel"></FormRow>).toJSON();
+        const tree = renderer.create(<FormRow type="text" name="name" value="test" handleChange="No change" labelText="testlabel"></FormRow>);
         expect(tree).toMatchSnapshot();
     });
 
