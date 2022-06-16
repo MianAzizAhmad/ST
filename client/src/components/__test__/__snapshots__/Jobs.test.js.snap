@@ -35,6 +35,7 @@ exports[`Jobs Test Case {   Snap 1 } 1`] = `
       <span
         className="text"
         id="type"
+        title="type"
       >
         Associate Developer
       </span>

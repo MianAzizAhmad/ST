@@ -5,7 +5,7 @@ import Wrapper from '../assets/wrappers/StatsContainer'
 import React from 'react';
 
 const StatsContainer = () => {
-  const { stats } = useAppContext();
+  const stats = useAppContext();
   console.log(stats);
 
   const defaultStats = [

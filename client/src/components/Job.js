@@ -32,7 +32,7 @@ const Job = ({
       <div className='content'>
         <div className='content-center'>
           <span className='icon'>{date}</span>
-          <span className='text' id="type">{jobType.Type}</span>
+          <span className='text' id='type' title='type'>{jobType.Type}</span>
           <div className={`status ${status}`}>{status}</div>
         </div>
         <footer>

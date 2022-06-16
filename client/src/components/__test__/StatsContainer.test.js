@@ -14,12 +14,12 @@ describe('StatsContainer Test Case { ', ()=>{
     
     beforeEach(() => {
         store = mockStore({
-            pending: "1", declined: "1", interview: "1",
+            pending: '1' , declined: '1', interview: '1',
         });
-    
+        component = renderer.create(<Provider store={store}><StatsContainer ></StatsContainer></Provider>).toJSON();
     });
 
-    component = renderer.create(<Provider store={store}><StatsContainer ></StatsContainer></Provider>).toJSON();
+    
 
     it(' Snap 1 }', ()=>{
         expect(component).toMatchSnapshot();

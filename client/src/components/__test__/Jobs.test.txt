@@ -1,10 +1,10 @@
 import React from 'react';
 import Job from './../Job';
 import "@testing-library/jest-dom/extend-expect"
-// import { act } from 'react-dom/test-utils';
-import { fireEvent } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
 import renderer from 'react-test-renderer';
-import { renderHook, act } from '@testing-library/react-hooks/dom'
+// import { act } from '@testing-library/react-hooks/dom'
+import { waitFor } from '@testing-library/react';
 
 describe('Jobs Test Case { ', ()=>{
 
@@ -21,8 +21,9 @@ describe('Jobs Test Case { ', ()=>{
         expect(component).toMatchSnapshot();
     });
 
-    it(' Snap 2 }', ()=>{
+    it(' Snap 2 }', async ()=>{
       
+        const fn = jest.fn();
         const component = renderer.create(<Job _id="1"
         position="Fresh" 
         company="Confiz"
@@ -31,13 +32,9 @@ describe('Jobs Test Case { ', ()=>{
         createdAt="HR"
         status="Offered" onClick={fn}></Job>);
         const btn = component.root.findByType('button');
-        act(btn.props.onClick);
-        // act(() => {
-        //     fireEvent.click(btn.props);
-        //   });
-        // Verify callback is invoked
-        console.log(fn.mock.calls.length);
-        // expect(fn.mock.calls.length).toBe(1);
-        expect(component.root.getElementbyId('type').value).toBe("Clerk");
-    });
+        renderer.act(btn.props.onClick);
+        await waitFor(() => {
+            expect(component.root.findByProps({className: "text"}).children).toEqual(['Clerk']);
+          });
+        });
 });
